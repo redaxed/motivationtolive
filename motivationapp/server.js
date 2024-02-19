@@ -40,6 +40,6 @@ app.listen(PORT, () => {
 
 app.get('/api/quotes', (req, res) => {
     console.log("being called?");
-    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomIndex = Math.floor(Math.random( ) * quotes.length);
     res.json({ quote: quotes[randomIndex] });
 });
