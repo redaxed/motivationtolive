@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "heroku-postbuild": "cd motivationapp/ && npm install && npm run build",
+      "start": "cd motivationapp/ && npm start"
+    }
+  }
