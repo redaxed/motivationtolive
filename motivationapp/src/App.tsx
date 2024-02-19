@@ -1,23 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+
+const [quote, setQuote] = useState('Loading...');
+  const fetchQuote = async () => {
+    const response = await fetch('/api/quotes');
+    const data = await response.json();
+    setQuote(data.quote);
+  };
+
+  useEffect(() => {
+    fetchQuote();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload. NEEXT
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+      {"<3"}
       </header>
+      <code>{quote}</code>
     </div>
   );
 }
