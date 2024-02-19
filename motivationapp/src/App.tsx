@@ -17,7 +17,7 @@ const [quote, setQuote] = useState('Loading...');
   return (
     <div className="App">
       <header className="App-header">
-      {"<3 11"}
+      {"<3"}
       <code>{quote}</code>
       </header>
     </div>
