@@ -7,26 +7,36 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Motivational quotes array
 const quotes = [
-    "Don't kill yourself, it's cringe.",
-    `
-    Dear Koichi,
-
-I was very happy to hear from you, and that you have such a position in the Research Laboratories. Unfortunately your letter made me unhappy for you seem to be truly sad. It seems that the influence of your teacher has been to give you a false idea of what are worthwhile problems. The worthwhile problems are the ones you can really solve or help solve, the ones you can really contribute something to. A problem is grand in science if it lies before us unsolved and we see some way for us to make some headway into it. I would advise you to take even simpler, or as you say, humbler, problems until you find some you can really solve easily, no matter how trivial. You will get the pleasure of success, and of helping your fellow man, even if it is only to answer a question in the mind of a colleague less able than you. You must not take away from yourself these pleasures because you have some erroneous idea of what is worthwhile.
-
-You met me at the peak of my career when I seemed to you to be concerned with problems close to the gods. But at the same time I had another Ph.D. Student (Albert Hibbs) whose thesis was on how it is that the winds build up waves blowing over water in the sea. I accepted him as a student because he came to me with the problem he wanted to solve. With you I made a mistake, I gave you the problem instead of letting you find your own; and left you with a wrong idea of what is interesting or pleasant or important to work on (namely those problems you see you may do something about). I am sorry, excuse me. I hope by this letter to correct it a little.
-
-I have worked on innumerable problems that you would call humble, but which I enjoyed and felt very good about because I sometimes could partially succeed. For example, experiments on the coefficient of friction on highly polished surfaces, to try to learn something about how friction worked (failure). Or, how elastic properties of crystals depend on the forces between the atoms in them, or how to make electroplated metal stick to plastic objects (like radio knobs). Or, how neutrons diffuse out of Uranium. Or, the reflection of electromagnetic waves from films coating glass. The development of shock waves in explosions. The design of a neutron counter. Why some elements capture electrons from the L-orbits, but not the K-orbits. General theory of how to fold paper to make a certain type of child’s toy (called flexagons). The energy levels in the light nuclei. The theory of turbulence (I have spent several years on it without success). Plus all the “grander” problems of quantum theory.
-
-No problem is too small or too trivial if we can really do something about it.
-
-You say you are a nameless man. You are not to your wife and to your child. You will not long remain so to your immediate colleagues if you can answer their simple questions when they come into your office. You are not nameless to me. Do not remain nameless to yourself – it is too sad a way to be. Know your place in the world and evaluate yourself fairly, not in terms of your naïve ideals of your own youth, nor in terms of what you erroneously imagine your teacher’s ideals are.
-
-Best of luck and happiness.
-
-Sincerely,
-
-Richard P. Feynman.
-`
+    "Every sunrise is an invitation to brighten someone's day.",
+    "Life is a mosaic of experiences, each piece valuable, even the ones that hurt.",
+    "You are the author of your own life story; make it a masterpiece.",
+    "In the symphony of life, your melody is unique; let it play loudly.",
+    "You're not a drop in the ocean but the entire ocean in a drop. Embrace your depth.",
+    "Storms make trees take deeper roots. Stand strong, no matter the weather.",
+    "Life's beauty is in its diversity. Celebrate your unique color in the tapestry of existence.",
+    "Each day is a new canvas. Paint it with your brightest colors.",
+    "Your life is your message to the world. Ensure it's inspiring.",
+    "Life is not about waiting for the storm to pass but learning to dance in the rain.",
+    "You are a lighthouse in someone's storm. Never underestimate your impact.",
+    "Life is a garden. Sow kindness and compassion and watch them grow.",
+    "You're a star in the constellation of the universe. Shine your light.",
+    "Every breath is a second chance. Breathe deeply and embrace life.",
+    "You're the artist of your life. Don't hand the paintbrush to anyone else.",
+    "In the book of life, the answers aren't at the back. They're in the journey.",
+    "Your footsteps are your legacy. Walk with purpose and love.",
+    "Life's ripple effect means your actions matter. Make waves of positive change.",
+    "You're a melody in the music of the universe. Sing your song.",
+    "Every moment is a new beginning. Embrace the fresh starts.",
+    "You are the captain of your soul, the master of your fate.",
+    "Life is a tapestry of moments. Weave yours with joy and passion.",
+    "Your life is a precious gift. Cherish it, celebrate it, and share its light.",
+    "The world is a canvas to our imagination. Live life in bold colors.",
+    "You have the power to turn challenges into opportunities. Seize them.",
+    "Life is a journey with problems to solve, lessons to learn, but most of all, experiences to enjoy.",
+    "Your life's significance is not in its duration, but in its donation.",
+    "Be the light in the darkness, the hope in despair, and the love in indifference.",
+    "Every heartbeat is an opportunity to love, live, and learn.",
+    "Life is like a book. Don't skip to the end to see if it's worth it. Enjoy the story as it unfolds."
 ];
 
 app.get('/', function (req, res) {
